@@ -1,0 +1,130 @@
+html{
+    background-color:white;
+}
+body{
+    font-family: 'NanumSquare', sans-serif;
+    line-height: 1.5;
+    margin: 0px;
+}
+.headerwrap{
+    display:grid;
+    grid-template-columns: 600px 440px 160px;
+    margin:auto;
+    margin-top: 10px;
+    width:1200px;
+}
+.headermenu{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size:25px;
+    text-align: center;
+    list-style:none;
+    padding:0px;
+    padding-top:30px;
+    margin-bottom: 0;
+}
+.headermenu li a{
+    display: block;
+    padding: 0;
+}
+.headermenu li a.active{
+    border-bottom: solid rgb(178,244,240) 3px;
+}
+.headermenu li > div{
+    display:none;
+}
+.headermenu li > div.active{
+    display:block;
+}
+.headermenu li > div p{
+    font-size: 16px;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+.headermenu li > div p:first-child{
+    margin: 0;
+    padding: 20px 0;
+}
+.headerloginmenu{
+    text-align: right;
+    margin-top: 37px;
+    font-size:14px;
+}
+.headerloginmenu span:first-child{
+    padding-right: 20px;
+}
+hr{
+    margin:10px 0px;
+}
+.container{
+    width:1200px;
+    margin:auto;
+}
+footer{
+    background-color: #fff;
+    margin-top: 50px;
+}
+.footerwrap{
+    max-width: 1200px;
+    margin:auto;
+    padding:10px;
+    padding-bottom: 30px;
+}
+.footermenu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    list-style:none;
+    text-align: center;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding:10px 0px;
+}
+.footeretc{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+address{
+    font-size: 14px;
+    padding: 10px;
+    margin-left: 10px;
+    color: gray;
+}
+img{
+    vertical-align:top;
+}
+.logo{
+    width:600px;
+}
+:link{
+    text-decoration:none;
+    color:black;
+}
+:visited{
+    color:black;
+}
+#back-to-top{
+    position:fixed;
+    bottom:3em;
+    right:3em;
+    background-color: rgba(255,255,255,.9);
+    color:#313943;
+    border:none;
+    border-radius: 5px;
+    padding: 1em;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 0 2em 0 rgba(0,0,0,.25);
+    transition: all .3s ease-in-out;
+    display: inline-block;
+    opacity: 0;
+    text-decoration: none;
+    font-size: .75em;
+}
+#back-to-top:hover{
+    background-color: #fff;
+    padding:1em 3em;
+}
+#back-to-top.visible{
+    opacity: 1;
+}
